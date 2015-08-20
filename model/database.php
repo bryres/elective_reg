@@ -1,7 +1,12 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=electives';
-$username = 'mgs_user';
-$password = 'pa55word';
+# Localhost connection option
+# $dsn = 'mysql:host=localhost;dbname=electives';
+# $username = 'electives_user';
+
+# Remote connection option
+$dsn = 'mysql:host=192.168.1.9;dbname=electives';
+$username = 'electives_user_2';
+$password = 'atcsrocks';
 $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 try {
